@@ -1,0 +1,3 @@
+[submodule "acme-foobar"]
+	path = acme-foobar
+	url = git@github.com:rdavison/acme-foobar
