@@ -1,0 +1,19 @@
+{
+  "name": "acme-root",
+  "version": "0.1.0",
+  "description": "Acme root",
+  "esy": {
+    "build": "dune build --profile=release @install",
+    "buildDev": "dune build --profile=dev @all",
+    "install": "dune install --prefix=#{self.install}",
+    "buildsInSource": "_build",
+    "release": {
+      "bin": ["acme-foobar"],
+      "rewritePrefix": true
+    }
+  },
+  "dependencies": {
+    "ocaml": "4.9.1000",
+    "@opam/dune": "2.5.1"
+  }
+}
